@@ -1,0 +1,6 @@
+pandas
+numpy
+streamlit
+lxml
+html5lib
+BeautifulSoup4
