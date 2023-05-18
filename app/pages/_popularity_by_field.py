@@ -14,9 +14,9 @@ st.set_page_config(
 
 current_file = os.path.abspath(os.path.dirname(__file__))
 
-data3 = pd.read_csv(current_file+"\\..\..\data\jobkorea_data.csv")
-data_2020 = pd.read_csv(current_file+"\\..\..\data/data_2/data_2020.csv")
-data_2021 = pd.read_csv(current_file+"\\..\..\data/data_2/data_2021.csv")
+data3 = pd.read_csv(current_file+"/../../data/jobkorea_data.csv")
+data_2020 = pd.read_csv(current_file+"/../../data/data_2/data_2020.csv")
+data_2021 = pd.read_csv(current_file+"/../../data/data_2/data_2021.csv")
 
 data_list = [data_2020, data_2021]
 
