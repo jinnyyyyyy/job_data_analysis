@@ -13,7 +13,7 @@ st.set_page_config(
 
 current_file = os.path.abspath(os.path.dirname(__file__))
 
-data = pd.read_csv(current_file+"\..\data\jobkorea_data.csv")
+data = pd.read_csv(current_file+"/../data/jobkorea_data.csv")
 
 
 st.title('📊 잡코리아 채용 정보를 통한 구직 트렌드 분석 📊')
