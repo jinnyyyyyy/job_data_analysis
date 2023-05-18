@@ -30,7 +30,7 @@ st.subheader(year_select)
 
 img_ida = year_list.index(year_select)
 
-folder = current_file+"\\..\..\data\data_1/"
+folder = current_file+"/../../data/data_1/"
 # 서로 다른 리스트를 묶어서 하나처럼 사용하려면 같은 인덱스에 있음을 이용하면 됩니다 
 image_files = ['2020년공고키워드.PNG', '2021년공고키워드.PNG']
 #  

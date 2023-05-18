@@ -14,7 +14,7 @@ st.set_page_config(
 
 current_file = os.path.abspath(os.path.dirname(__file__))
 
-data = pd.read_csv(current_file+"\\..\..\data\jobkorea_data.csv")
+data = pd.read_csv(current_file+"/../../data/jobkorea_data.csv")
 
 # st.dataframe(data, use_container_width=True)
 
