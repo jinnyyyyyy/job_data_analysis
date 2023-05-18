@@ -24,7 +24,7 @@ st.text('👩‍💻김현지, 👩‍💻이우윤, 👩‍💻김혜진')
 with st.container():
     st.divider()
     st.header('주제 선정 이유')
-    image = Image.open(current_file+'\job1.png')
+    image = Image.open(current_file+'/job1.png')
 
     st.image(image, width=600)
     st.markdown('''1. 모두가 구직자의 입장에서 구직 플랫폼인 '잡코리아' 데이터 분석을 통해 구직의 트렌드 분석 및 예측
