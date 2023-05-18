@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 from PIL import Image
 import plotly
+import os
 
 st.set_page_config(
      page_title="Job Data Analysis App",
@@ -10,7 +11,9 @@ st.set_page_config(
      initial_sidebar_state="expanded",
  )
 
-data = pd.read_csv("..\data\jobkorea_data.csv")
+current_file = os.path.abspath(os.path.dirname(__file__))
+
+data = pd.read_csv(current_file+"\..\data\jobkorea_data.csv")
 
 
 st.title('📊 잡코리아 채용 정보를 통한 구직 트렌드 분석 📊')
@@ -21,7 +24,7 @@ st.text('👩‍💻김현지, 👩‍💻이우윤, 👩‍💻김혜진')
 with st.container():
     st.divider()
     st.header('주제 선정 이유')
-    image = Image.open('job1.png')
+    image = Image.open(current_file+'\job1.png')
 
     st.image(image, width=600)
     st.markdown('''1. 모두가 구직자의 입장에서 구직 플랫폼인 '잡코리아' 데이터 분석을 통해 구직의 트렌드 분석 및 예측
