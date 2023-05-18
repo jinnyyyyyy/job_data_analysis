@@ -4,3 +4,4 @@ streamlit
 lxml
 html5lib
 BeautifulSoup4
+plotly
