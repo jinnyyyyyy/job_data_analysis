@@ -29,7 +29,7 @@ st.subheader(job_ed_select)
 
 
 if job_ed_select =='2020년':
-    html_file = open(current_file+"\\..\..\data\공고별_경력학력_2020.html", 'r', encoding='utf-8')
+    html_file = open(current_file+"/../../data/공고별_경력학력_2020.html", 'r', encoding='utf-8')
     source_code = html_file.read() 
     components.html(source_code,height=500)
     st.markdown('''- 2020년 그래프에서는
@@ -38,7 +38,7 @@ if job_ed_select =='2020년':
     
     학력에서는 무관인 경우가 압도적으로 많았지만, 반대로 고학력일수록 퍼센트는 낮다는 것이 확인된다.''')
 else:
-    html_file = open(current_file+"\\..\..\data\공고별_경력학력_2021.html", 'r', encoding='utf-8')
+    html_file = open(current_file+"/../../data/공고별_경력학력_2021.html", 'r', encoding='utf-8')
     source_code = html_file.read() 
     components.html(source_code,height=500)
     st.markdown('''- 2021년 그래프는
